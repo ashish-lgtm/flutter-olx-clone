@@ -54,40 +54,6 @@ class MyApp extends StatelessWidget {
         PhotoScreen.id : (context) => PhotoScreen(),
       },
     );
-    /*return FutureBuilder(
-      //replace the 3 second delay with initialization code
-      future: Future.delayed(Duration(seconds:3)),
-      builder: (context, AsyncSnapshot snapshot){
-        //show splash screen while waiting for app resources tp load:
-        if(snapshot.connectionState == ConnectionState.waiting){
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-                primaryColor: Colors.cyan.shade900,
-                fontFamily: 'Lato'
-            ),
-            home: SplashScreen());
-        }
-          else{
-            //loading is done, return the app
-            return MaterialApp(
-              debugShowCheckedModeBanner: false,
-              theme: ThemeData(
-                primaryColor: Colors.cyan.shade900,
-                fontFamily: 'Lato'
-              ),
-              // need to change this to initial screen meaning starting screen
-              home: LoginScreen(),
-              routes: {
-                //adding screens here for easy navigation
-                LoginScreen.id : (context)=> LoginScreen(),
-                PhoneAuthScreen.id : (context)=>PhoneAuthScreen(),
-                LocationScreen.id : (context)=> LocationScreen(),
-              },
-            );
-          }
-        },
-    );
-    */
+    
   }
 }
